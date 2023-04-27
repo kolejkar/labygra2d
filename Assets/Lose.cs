@@ -21,6 +21,8 @@ public class Lose : MonoBehaviour
         
     }
 
+
+    //ładowanie menu głównego
     public void LoadScene()
     {
         SceneManager.LoadScene("Menu", LoadSceneMode.Single);

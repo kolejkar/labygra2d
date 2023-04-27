@@ -72,6 +72,8 @@ public class Engine : MonoBehaviour
         }
     }
 
+
+    //Gdy wystąpi kolizja obiektów
     public void OnCollisionEnter2D(Collision2D col)
     {
         Debug.Log("OnCollisionEnter2D: "+ col.collider.name);
@@ -102,11 +104,13 @@ public class Engine : MonoBehaviour
 
     }
 
+    //ładowanie wyniku gry
     public void LoadScene()
     {
         SceneManager.LoadScene("Game over", LoadSceneMode.Single);
     }
 
+    //przeszkoda z dodatkowymi punktami
     public void SetBonus()
     {
         Debug.Log(point+" % 30 = "+point%30);
@@ -131,6 +135,7 @@ public class Engine : MonoBehaviour
         }
     }
 
+    //przyspieszanie piłki
     private void Faster()
     {
         if (point > 50)
